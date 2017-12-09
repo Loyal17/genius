@@ -1,0 +1,218 @@
+<!Doctype html>
+<html>
+<head>
+<title>
+About Me including my photo album
+</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){
+
+   	$(".about").click(function(){
+        $("#story").toggle();
+   		});
+
+   	$(".album").click(function(){
+   	$("#album").toggle();
+   });
+
+   	});
+   
+   
+  
+</script>
+<style>
+body{margin:0;padding:0;background:#835B43;}
+	#wrapper{margin:0 auto;width:1000px;background:#FFF}
+	#header{height:900px;/*background-image: url("jump.jpg");*/background-color:#ccc;border-bottom: 7px solid #FF6600 }
+	#nav{width:1000px;height:300px;background:#0A5787;}
+	#nav h1{font-size:28px;padding-top:50px;color:#FFF;margin-left:400px;}
+	#nav ul{list-style-type:none;margin-left:400px;margin-bottom:50px;padding-top:50px;}
+	#nav ul li{display:inline;margin:0 0 0 10px;color:#FFF;}
+	#nav ul li a{color:#FFF;text-decoration: none;}
+	#nav ul li a:hover {color:#FF6600;}
+	#media{margin-left:50px;color:#FFF;font-size:24px;position:absolute;top:250px;}
+	#content{background:#FFF;margin:-20px 50px 0 50px ;padding-top:0;padding-bottom:50px;}
+	#content h1{margin-left:400px;}
+	#album{background:#000;width:900px;min-height:800px;}
+	#frame{position:relative;top:100px;left:250px;width:400px;height:600px;background:#FFF;}
+	#autobutton{position:relative; background:red;padding:5px;margin-left:450px;margin-top:90px;border-radius:10%;cursor:pointer;}
+	#pic1{position:relative;display:inline;margin-left:10px;}
+	#pic{display:inline;} 
+	.pagin{position:relative;display:inline;width:5px;height:5px;cursor:pointer;color:blue;padding-right:5px;}
+	.pagin:hover{color:red;border:2px solid green;;background:yellow;}   
+	#footer{width:1000;min-height:250px;background:grey;}
+	#footer h1{text-align:center;padding-top:15px;border-top:7px solid #FF6600;}
+#footer a{color:green;text-align:center;margin-left:20px;}
+</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			
+			<div id="nav">
+				<h1>About Me Website</h1>
+				<ul>
+					<li><a class="one" href="#">Home</a></li><li>|</li> 
+					<li class="about"><a class="two" href="#">About Me</a></li><li>|</li>
+					<li class="album"><a class="three" href="#">My Album</a></li><li>|</li>
+					<li><a class="four" href="#">Address and contacts</a></li><li>|</li>
+					<li><a class="five" href="#">Link Five</a></li><li>|</li>
+				</ul>
+				<div id="media">
+					</div>
+			</div> <!-- End of navigation -->
+			<img src = "images/jump.jpg" width="1000" height="500"/>
+		</div> <!--End of header -->
+		<div id="content">
+			<h1>Who am I?</h1>
+			<div id="story">
+				<h2><strong>Background</strong></h2>
+			<p>My name is Warren H. I was born in Rwanda in the family of 7 children. The country of Rwanda is in centre of Africa with a population of about 12 million with the area of 26 338 sqkm. The majority of the population is the youth. The native language in Rwanda is called Kinyarwanda and that is the one language spoken by all the population. Apart form that, at school people learn french and english. Currently, all those three languages are used officially. The average maximum temperature in Rwanda is 26 degree celcius while the minimum average temperature is 15 degree celcius.</p>
+			<h2>Education</h2>
+			<p>I studied my primary and secondary education in Rwanda.I finished my secondary education in 1996. I studied one year in National University of Rwanda before getting a scholarship and travel to India to study Civil Engineering. I completed my bachelor degree in 2002, and returned back home. I worked for one private company for about a year then joined the Unit of Schools Construction toward the end of the year 2003. I assumed different role in the unit of schools construction. In  the year 2013 I moved to Hong Kong.</p>
+			<h2>About job</h2>
+			<p>He had the most of his job in Rwanda. He worked for the private construction company for about a year before joining the Schools Construction Unit of the Ministry of Education. He played a great role in increasing and improving the schools infrastructure in Rwanda, which made the 9-year and 12-year basic education possible. Just in the span of 3 years from 2009, his unit constructed more than 9 000 classrooms across the country. After that great achievement, the students enrolment rate in primary education greatly impoved and came closer to 100%.</p>
+			<p>His job included both technical knowledge in the construction as well as management skills. Apart from few staff in the central office, he had more than 500 people working for that project around the country. Among the staff under his supervision included engineers, logisticians, human resource, site techinicians. His job included management of contracts for supply of material and to ensure that contractors are paid on time.</p>
+			<h2>Languages</h2>
+			<p>Warren speaks 3 languages: one is his mother tongue called Kinyarwanda. He speaks and can write also English and French.He studied his secondary education in Rwanda; and that is where he learned french because it was the medium of instruction in his secondary education. His secondary education focussed on sciences:Maths, physics, chemistry, biology…</p>
+			<h2>Interest</h2>
+			<p>I enjoy music, different kind of music: pop music, country music, slow music, rock music...To keep myself fit, I do jogging, hiking and some gym</p>
+			<h2>Dreams</h2>
+			<p>I am dreaming to be a great programmer. I know it is not easy, and requires a lot of work. But every thing is possible. I will just do my best. I have a dream to see people united in love. I know that I have to play my part in promoting unit and peace. I hate to see people treated unfairly by other people especially by those with authority.</p>
+			<h2 style="text-align:center">My Album</h2>
+			<hr style="color:green; border:2px solid red"/>
+		    </div><!-- end of story div -->
+		    <div id="album">
+		    	<div id="frame">
+		    	<!--	<img id="pic1" src = "https://image.flaticon.com/icons/svg/60/60775.svg" width="10"/>   --> <img id = "pic" src = "images/slide3.jpg" width="400" height="600" alt="missing photo" /> 
+		    	</div> <!--end of frame for pictures --><br/>
+              <button id="autobutton" onclick="stopslide()"> STOP </button> <br/>
+		   	<div class="pagin" style="margin-left:200px" onclick ="one()">1</div><div class="pagin" onclick="two()">2</div><div class="pagin" onclick="three()">3</div><div class="pagin" onclick="four()">4</div><div class="pagin" onclick="five()">5</div><div class="pagin" onclick="six()">6</div><div class="pagin" onclick="seven()">7</div><div class="pagin" onclick="eight()">8</div><div class="pagin" onclick="nine()">9</div><div class="pagin" onclick="ten()">10</div><div class="pagin" onclick="eleven()">11</div><div class="pagin" onclick="twelve()">12</div><div class="pagin" onclick="thirteen()">13</div><div class="pagin" onclick="fourteen()">14</div><div class="pagin" onclick="fifteen()">15</div><div class="pagin" onclick="sixteen()">16</div><div class="pagin" onclick="seventeen()">17</div><div class="pagin" onclick="eighteen()">18</div><div class="pagin" onclick="nineteen()">19</div><div class="pagin" onclick="twenty()">20</div><div  class="pagin" onclick="twentyone()">21</div><div class="pagin" onclick="twentytwo()">22</div><div class="pagin" onclick="twentythree()">23</div><div class="pagin" onclick="twentyfour()">24</div><div class="pagin" onclick="twentyfive()">25</div><div class="pagin" onclick="twentysix()">26</div><div class="pagin" onclick="twentyseven()">27</div> 
+		   
+		    </div> <!--end of album -->
+		</div> <!--End of content -->
+		<div id="footer">
+			<h1>Copyright &copy; 2017</h1>
+			<a href="#">Terms of Use</a> <a href="#">Privacy policy</a><a href="#">Our address and contacts</a>
+
+		</div> <!--end of footer -->
+
+	</div>
+	<script>
+		var words=["When life gives you a hundred reasons to cry, show life that you have a thousand reasons to smile.","The journey of a thousand miles begins with one step","I am just a believer that things will be better","It is not what you look at that matters, it is what you see","The only true wisdom is in knowing you know nothing","People do not notice wether it is winter or summer when they are happy"];
+		var x = document.getElementById("media");
+		var t = setInterval(play,5000);
+		var counter =0;
+		function play(){
+				x.innerHTML = words[counter];
+				counter++;
+				if(counter>=words.length){
+					counter=0;
+				}
+		}
+		var photos =["images/slide1.jpg","images/slide2.jpg","images/slide3.jpg","images/slide4.jpg","images/slide5.jpg","images/slide6.jpg","images/slide7.jpg","images/slide8.jpg","images/slide9.jpg","images/slide10.jpg","images/slide11.jpg","images/slide12.jpg","images/slide13.jpg","images/slide14.jpg","images/slide15.jpg","images/slide16.jpg","images/slide17.jpg","images/slide18.jpg","images/slide19.jpg","images/slide20.jpg","images/slide21.jpg","images/slide22.jpg","images/slide23.jpg","images/slide24.jpg","images/slide25.jpg","images/slide26.jpg","images/slide27.jpg"];
+		
+        var k = setInterval(move, 2500);
+        var i=0;
+        function move(){
+        	var el = document.getElementById("pic");
+		    el.src = photos[i];
+		    if(i<photos.length-1){
+		    i++;
+		}else{
+			i=0;
+		}
+        }
+        function stopslide(){
+        	clearInterval(k);
+        }
+		
+	</script>
+
+	<script>
+var z = document.getElementById("pic");
+	function one(){
+			z.src=photos[0];
+	}
+	function two(){
+			z.src=photos[1];
+	}
+	function three(){
+			z.src=photos[2];
+	}
+    function four(){
+			z.src=photos[3];
+	}
+	function five(){
+			z.src=photos[4];
+	}
+	function six(){
+			z.src=photos[5];
+	}
+	function seven(){
+			z.src=photos[6];
+	}
+	function eight(){
+			z.src=photos[7];
+	}
+	function nine(){
+			z.src=photos[8];
+	}
+    function ten(){
+			z.src=photos[9];
+	}
+	function eleven(){
+			z.src=photos[10];
+	}
+	function twelve(){
+			z.src=photos[11];
+	}
+	function thirteen(){
+			z.src=photos[12];
+	}
+	function fourteen(){
+			z.src=photos[13];
+	}
+	function fifteen(){
+			z.src=photos[14];
+	}
+    function sixteen(){
+			z.src=photos[15];
+	}
+	function seventeen(){
+			z.src=photos[16];
+	}
+	function eighteen(){
+			z.src=photos[17];
+	}
+	function nineteen(){
+			z.src=photos[18];
+	}
+	function twenty(){
+			z.src=photos[19];
+	}
+	function twentyone(){
+			z.src=photos[20];
+	}
+    function twentytwo(){
+			z.src=photos[21];
+	}
+	function twentythree(){
+			z.src=photos[22];
+	}
+	function twentyfour(){
+			z.src=photos[23];
+	}
+	function twentyfive(){
+			z.src=photos[24];
+	}
+    function twentysix(){
+			z.src=photos[25];
+	}
+	function twentyseven(){
+			z.src=photos[26];
+	}
+	</script>
+</body>
+</html>
